@@ -17,7 +17,7 @@
                 "})",
                 "",
                 "pm.test(\"Body matches string\", () => {",
-                "    pm.expect(pm.response.status).to.equal(\"OK\")",
+                "    pm.expect(pm.response.status).to.equal(\"ne ok\")",
                 "})"
               ],
               "type": "text/javascript"
@@ -28,7 +28,7 @@
           "method": "GET",
           "header": [],
           "url": {
-            "raw": "http://hello-kubernetes-service.default",
+            "raw": "http://hello-kubernetes-service.default/aaa",
             "protocol": "http",
             "host": [
               "hello-kubernetes-service",
